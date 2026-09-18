@@ -1,4 +1,4 @@
-# JointScaler-Sim: Uncertainty-Aware Infrastructure Auto-Scaling Engine
+# JointScaler: Uncertainty-Aware Infrastructure Auto-Scaling Engine
 
 [![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![Docker Compliant](https://img.shields.io/badge/container-docker-blue)](https://www.docker.com/)
@@ -41,7 +41,7 @@ Traditional auto-scalers react blindly to isolated metric thresholds (e.g., *sca
 Database infrastructure failure states are rarely driven by a single independent variable. An index build paralyzes CPU and Disk I/O concurrently, while a read-heavy query burst shifts cache hits into memory pools. 
 The system continuously tracks a sliding rolling window of telemetry arrays to output a real-time **Pearson Correlation Matrix ($R$)** across indicators:
 
-$$R_{X,Y} = \frac{\operatorname{cov}(X,Y)}{\sigma_X \sigma_Y}$$
+$$R_{X,Y} = \frac{\mathop{\text{cov}}(X,Y)}{\sigma_X \sigma_Y}$$
 
 This captures hidden, structural system dependencies across separate resource pools before scaling actions are committed.
 

@@ -1,0 +1,7 @@
+simulation:
+  duration_ticks: 120 # Extended execution window to observe systemic recovery
+  initial_nodes: 3 # Baseline safe starting fleet configuration 
+  
+qos:
+  latency_threshold_ms: 30.0 # SLA limit before performance tracking flags breaches 
+  risk_tolerance_alpha: 0.95 # confidence target (95% worst case variance boundary scaling)

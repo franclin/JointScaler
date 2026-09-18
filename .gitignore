@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Data
+data/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Kubernetes secrets (don't commit real keys)
+k8s/secret.yaml
+
+# Docker
+*.tar.gz
+
+# OS
+.DS_Store

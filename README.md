@@ -4,7 +4,7 @@
 [![Docker Compliant](https://img.shields.io/badge/container-docker-blue)](https://www.docker.com/)
 [![Testing Framework](https://img.shields.io/badge/test-pytest-green)](https://docs.pytest.org/)
 
-An event-driven simulation platform implementing an uncertainty-aware infrastructure auto-scaler inspired by the **JointScaler (IJCAI 2026)** architectural framework. This repository models multi-tenant database workload constraints, tracks multi-indicator telemetry correlations, and uses probabilistic statistical distribution bounds to dynamically scale cluster fleets ahead of QoS degradations.
+An event-driven simulation platform implementing an uncertainty-aware infrastructure auto-scaler inspired by the **[JointScaler (IJCAI 2026)] (https://www.ijcai.org/proceedings/2026/323)** architectural framework. This repository models multi-tenant database workload constraints, tracks multi-indicator telemetry correlations, and uses probabilistic statistical distribution bounds to dynamically scale cluster fleets ahead of QoS degradations.
 
 This engine is built specifically to demonstrate production-grade software architecture integrated directly with rigorous applied statistical workflows—bridging the gap between distributed infrastructure engineering and operational machine learning.
 
@@ -127,3 +127,8 @@ In compliance with professional applied data science engineering practices, this
 *   **Numerical Stability Regularization:** In uniform, static system states where volatility approaches zero ($\sigma^2 \rightarrow 0$), traditional Gaussian evaluation risks division-by-zero runtime panic. This framework integrates a strict regularizing value modifier (+1e-4) to guarantee mathematical continuity across flat baselines.
 *   **System Cold-Starts:** If the infrastructure metrics logging history is smaller than the predictor's mandatory lookback window ($t < t_{	ext{lookback}}$), the model drops back to an un-infinite, highly stable 0.5 moving baseline fallback profile to avoid erratic initial cluster thrashing.
 *   **Predictor Horizon Bounds:** The current probabilistic simulation layer assumes a localized Gaussian distribution path over short execution steps. Under permanent structural regime shifts (e.g., permanent infrastructure hardware changes), a transformer-based normalizing flow model would be required to maintain long-tail predictive coverage.
+
+
+## Reference Paper
+
+ - [JointScaler: A Hierarchical Multi-Indicator Distribution Forecasting Approach for Uncertainty-Aware Joint Scaling in Cloud Services] (https://www.ijcai.org/proceedings/2026/323) Published in the Proceedings of the Thirty-Fifth International Joint Conference on Artificial Intelligence Main Track. Pages 2906-2914
